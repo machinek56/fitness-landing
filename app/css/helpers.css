@@ -1,0 +1,69 @@
+/*
+* Structure
+*/
+
+.row {
+  margin: 0;
+}
+
+.row:after, .row:before {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.col-one-third {
+  width: 33.3%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+.col-two-third {
+  width: 66.6%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*
+* Color
+*/
+
+.-green {
+  color: #a2ca28;
+}
+.-red {
+  color: #fd634e;
+}
+.-white {
+  color: #fff;
+}
+.-gray {
+  color: #656e74;
+}
+
+.-bg-green {
+  background-color: #a2ca28;
+}
+.-bg-red {
+  background-color: #fd634e;
+}
+.-bg-white {
+  background-color: #fff;
+}
+.-bg-dark {
+  background-color: #0d1119;
+}
