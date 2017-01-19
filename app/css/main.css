@@ -1,28 +1,23 @@
-@import url('normalize.css');
+@import url('bootstrap.min.css');
 @import url('fonts.css');
 @import url('helpers.css');
 @import url('fontello.css');
 
-* {
-  box-sizing: border-box;
-}
 
 body {
-  background-color: #fff;
   font-family: 'Open Sans', sans-serif;
-}
-
-.container-page {
-  margin: 0;
+  font-size: 16px;
+  background-color: #fff;
+  color: #fff;
 }
 
 .container-header {
   max-width: 1600px;
   height: 720px;
-  background-image: url('../images/header-banner.jpg');
-  background-repeat: no-repeat;
+  position: relative;
+  background: url('../images/header-banner.jpg') no-repeat top center;
   background-size: cover;
-  padding: 35px 50px;
+  padding: 35px 0;
 }
 
 /*
@@ -30,8 +25,6 @@ body {
 */
 
 .logo-box {
-  width: 170px;
-
 }
 .logo {
   position: relative;
@@ -41,18 +34,18 @@ body {
 .logo-title {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #fff;
   float: right;
   position: relative;
-  right: 35px;
-
+  right: 20px;
+  letter-spacing: 2px;
 }
 .logoborder {
   position: relative;
-  top: -38px;
-  left: 48px;
+  top: -32px;
+  left: 42px;
   width: 20%;
   border-bottom: 3px solid #a2ca28;
 
@@ -64,28 +57,26 @@ body {
 
 .main-nav {
   float: right;
-  margin-top: -70px;
 }
 .nav-list {
   list-style-type: none;
 }
-.listitem {
+.list-item {
   display: inline-block;
   margin-left: 40px;
 
 }
-.listitem a {
+.list-item a {
   font-family: 'Nunito', sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
   text-decoration: none;
-  font-size: 0.8rem;
   transition: color .3s ease-out;
 }
 
-.listitem a:hover {
+.list-item a:hover {
   color: #fd634e;
 }
 
@@ -96,13 +87,12 @@ body {
 .motto-box {
   position: relative;
   top: 450px;
-  left: 40px;
-  width: 300px;
+  left: -40px;
   line-height: 1.3;
 }
 
 .mottotext {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -112,7 +102,7 @@ body {
 
 .mottosubtext {
   font-family: 'Nunito ExtraBold', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   color: #fff;
   text-transform: uppercase;
@@ -128,26 +118,14 @@ body {
 * Content Features
 */
 
-.container-inner {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-
-.container-features {
-  margin-bottom: 110px;
-}
 
 .features-list {
-  color: #fff;
+  margin-bottom: 110px;
   padding-top: 100px;
 }
 
 .feature-item {
-  width: 25%;
-  height: 320px;
-  float: left;
-  padding-right: 30px;
+  height: 280px;
   position: relative;
 }
 
@@ -155,20 +133,39 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
 }
-.feature-header h3 {
+.feature-header h2 {
   font-weight: 500;
   margin-top: 30px;
 }
 
 .feature-desc {
   font-family: 'Nunito', sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 1.5rem;
 }
-
 .feature-more {
-  font-family: 'Nunito Bold', sans-serif;
   position: absolute;
   bottom: 0;
+}
+.feature-link {
+  font-family: 'Nunito Bold', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.feature-link:hover {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.feature-more i {
+  position: relative;
+  top: -1px;
+  transition: margin-left 0.2s ease-in-out;
+}
+
+.feature-item:hover .feature-more i{
+  margin-left: 8px;
 }
 
 
@@ -176,13 +173,12 @@ body {
 * Grid
 */
 
-.container-grid {
-}
 .grid-item {
   height: 363px;
+  padding-right: 0;
+  padding-left: 0;
   overflow: hidden;
 }
-
 
 .item-header-box {
   text-align: center;
@@ -195,13 +191,13 @@ body {
 
 .subhead {
   font-family: 'Nunito Bold', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   line-height: 1.4;
 }
 .head {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 
@@ -212,7 +208,7 @@ body {
 
 .item-desc {
   font-family: 'Open sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   padding: 0 25px;
   margin: 0 auto;
   line-height: 1.7;
@@ -222,15 +218,20 @@ body {
   margin-top: 10px;
   text-align: center;
   font-weight: bold;
-  font-size: 0.9rem;
-  padding-bottom: 95px;
+  font-size: 1.4rem;
 }
-
+.item-more a:hover {
+  text-decoration: underline;
+  color: #add628;
+}
+.item-image {
+  background-size: cover;
+  background-position: center;
+}
 .item-image-content {
-  color: #fff;
   font-family: 'Nunito Bold', sans-serif;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .image-content-right {
@@ -257,6 +258,8 @@ body {
 .grid-item-random-large {
   height: 330px;
   overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
 }
 .grid-item-random-small {
   height: 308px;
