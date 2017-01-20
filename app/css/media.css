@@ -1,0 +1,29 @@
+
+
+
+@media screen and (max-width: 768px) {
+
+  .features-list {
+    margin: 40px 0;
+  }
+
+  .feature-item {
+    height: 260px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .features-list {
+    margin: 40px 0;
+  }
+  .feature-item {
+    height: 240px;
+    margin-bottom: 30px;
+  }
+
+  .feature-header h2 {
+    margin: 10px 0;
+  }
+}
