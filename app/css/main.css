@@ -1,4 +1,4 @@
-@import url('bootstrap.min.css');
+@import url('bootstrap.css');
 @import url('fonts.css');
 @import url('helpers.css');
 @import url('fontello.css');
@@ -242,7 +242,7 @@ body {
 
 .image-content-left {
   position: relative;
-  top: -80px;
+  top: -100px;
   right: -40px;
 }
 
@@ -330,9 +330,9 @@ body {
 }
 
 .banner-box {
-  background: url('../images/banner-man.jpg')  no-repeat top center;;
+  background: url('../images/banner-man.jpg') no-repeat;
+  background-position: top center;
   background-size: cover;
-  height: 690px;
   position: relative;
 }
 
@@ -342,13 +342,14 @@ body {
   padding-bottom: 343px;
 }
 .banner-head {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.7rem;
+  font-size: 3rem;
   letter-spacing: 1px;
-  padding-bottom: 28px;
+}
+.banner-head h2 {
+  font-weight: 500;
 }
 .banner-desc {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.4;
   width: 600px;
   margin: 0 auto;
@@ -382,14 +383,12 @@ body {
 */
 
 .footer-box {
-}
-.footer-inner {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 .footer-heading {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #d2d2d3;
 }
 .footer-block {
@@ -399,7 +398,7 @@ body {
 .footer-block p {
   font-family: 'Open Sans',sans-serif;
   color: #8297a7;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 
@@ -412,7 +411,7 @@ body {
   line-height: 50px;
   width: 50px;
   height: 50px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border-radius: 50%;
   margin-right: 5px;
   transition: background-color .3s ease-out-in;
@@ -456,13 +455,13 @@ body {
 }
 
 .contact-form input::-webkit-input-placeholder {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
 }
 
 .btn-subscribe {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   border: 0;
   border-radius: 3px;
   padding: 16px 30px;
